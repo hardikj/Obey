@@ -22,7 +22,7 @@ export default function Login() {
         redirectUri = 'http://localhost:3000/';
       } else {
         //if (window.location.host === 'https://supportify.club/') {
-        redirectUri = 'https://supportify.club/';
+        redirectUri = 'https://quizzical-shockley-2494e3.netlify.app/';
       }
       // } else {
       //  redirectUri = 'https://hardikj.github.io/supportify-deploy/';
