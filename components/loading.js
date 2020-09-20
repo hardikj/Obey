@@ -6,7 +6,7 @@ import Result from '../components/result';
 function Loading({ calc }) {
   let background = cn(styles.background, "flex flex-col justify-center items-center h-screen w-full bg-fixed bg-cover bg-center");
   const [src, setSrc] = useState("./oli image.png");
-  const [annotation, setAnnotation] = useState("Loading... Loading Lodaing");
+  const [annotation, setAnnotation] = useState("Loading...");
   const [showResult, setShowResult] = useState(false);
 
   // show image one
@@ -15,7 +15,7 @@ function Loading({ calc }) {
   // after 2 seconds move to next slide
   // setTimeout()
 
-  const annotations = [ "Loading...", "Oli's Robot is energetic", "Yungblud's loves to dance"]
+  const annotations = [ "Loading...", "Do you Smell the corruption?", "There's nothing to see here, It's under control"]
 
   let run = () => {
 	  var c = 1;
@@ -33,13 +33,13 @@ function Loading({ calc }) {
 	      clearInterval(timeout);
 	      setShowResult(true);
 	    }
-	  }, 13000);
+	  }, 3000);
   };
 
   useEffect(() => { return run(); }, [] );
 
   const renderImage = () => {
-  	return <img className={cn(styles.imagePosition	, "object-contain relative mr-20 w-48 lg:w-15vw")} src={src} />
+  	return <img className={cn(styles.imagePosition	, "object-contain relative mr-20 w-48 mt-20 lg:w-15vw")} src={src} />
   }
 
   const result = showResult ? <Result calc={calc}/> : <div className={background}>

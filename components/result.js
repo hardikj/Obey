@@ -42,10 +42,12 @@ function Result({ calc }) {
   const yungblud = calc.energy*100*0.3+calc.dance*100*0.4+calc.valence*100*0.3;
 
   let scr = "./yungblud image.png";
-  let robo = "Yunblud's robot";
+  let robo = "Yungblud's robot";
+  let name = "Yungblud's"
   if (oliScore > yungblud) {
     scr = "./oli image.png";
     robo = "Oli's robot";
+    name = "Oli's"
   }
 
   return (
@@ -59,7 +61,7 @@ function Result({ calc }) {
         </div>
         <div className="col-span-3 lg:col-span-2">
           <div className="bg-black p-8 lg:p-8vh mx-9vw lg:mx-10vw lg:my-6vh overflow-auto">
-            <div className="text-3xl lg:text-5xl text-white font-bold mb-10"> Your resemblance: </div>
+            <div className="text-2xl lg:text-4xl text-white font-bold mb-10"> Your tracks history analysis is similar to {name}: </div>
             <div className="flex flex-wrap flex-col float-left">
               <div className="bg-white my-2vh h-5 lg:h-10" style={{width:energy}}>  </div>
               <div className="bg-white my-2vh h-5 lg:h-10" style={{width:dance}}>  </div>
@@ -73,7 +75,15 @@ function Result({ calc }) {
           </div>
         </div>
         <div className="col-span-3 mx-0 lg:mx-6vw">
-          <div className="text-left"> <Heading> Share </Heading> </div>
+          <div className="text-left"> 
+            <Heading>
+              <div className="flex justify-center">
+                <span> Stream: </span>
+                <a href="https://open.spotify.com/album/5J7qci2JWfVtHdnhzCupbJ?si=11nOn3NBQbKw1J1R5JQKww"> <img className="ml-8 mt-1 lg:mt-2 w-8 h-8 object-center" src="./spotify.png" /> </a>
+                <a href="https://music.apple.com/us/album/obey-with-yungblud-single/1529004557"> <img className="ml-8 mt-1 lg:mt-2 w-8 h-8 object-center" src="./apple.svg" /> </a>
+              </div>
+            </Heading> 
+          </div>
         </div>
       </div>
   	</div>
