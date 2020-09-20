@@ -1,0 +1,8 @@
+.background {
+  background-image: url('/background.gif');
+}
+
+.imagePosition {
+  left: 12%;
+  bottom: 6%;
+}

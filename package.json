@@ -1,0 +1,21 @@
+{
+  "name": "obey",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@react-hook/media-query": "^1.1.1",
+    "classnames": "^2.2.6",
+    "next": "9.5.3",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "spotify-web-api-js": "^1.5.0",
+    "tailwindcss": "^1.8.10"
+  }
+}
