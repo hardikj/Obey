@@ -14,7 +14,7 @@ export default function Login() {
 
 
   let authenticate = () => {
-    const clientId = '';
+    const clientId = "a66382ce67aa41808ac922b86cfaba6f";
     let redirectUri = ''
       
     if (process.browser) {
