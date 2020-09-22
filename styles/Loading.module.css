@@ -6,3 +6,31 @@
   left: 12%;
   bottom: 6%;
 }
+
+
+.bubble {
+  position: relative;
+  background-color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding: 20px;
+  margin: 10px;
+  color: #fff;
+  width: 30%;
+  text-align:center;
+  border-radius: 20px;
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 39px solid transparent;
+	border-bottom-color: #000000;
+	border-top: 0;
+	border-left: 0;
+	margin-left: -19.5px;
+	margin-top: -39px;
+}

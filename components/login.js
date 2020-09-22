@@ -51,7 +51,9 @@ export default function Login() {
             </div>
           </div>
           <div className="col-span-3 mx-24vw lg:mx-32vw">
-            <Heading><button onClick={authenticate}>Find out now</button></Heading>
+            <div className="flex justify-center">
+              <button className="align bg-black mb-10 w-56vw lg:w-24vw py-2 font-sans font-bold text-xl lg:text-3xl tracking-widest leading-relaxed text-white text-center" onClick={authenticate}>Find out now</button>
+            </div>
           </div>
       </div>
     </div>

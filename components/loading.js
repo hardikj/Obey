@@ -15,7 +15,7 @@ function Loading({ calc }) {
   // after 2 seconds move to next slide
   // setTimeout()
 
-  const annotations = [ "Loading...", "Do you Smell the corruption?", "There's nothing to see here, It's under control"]
+  const annotations = [ "Obey!", "I am very energetic!", "I love to dance"]
 
   let run = () => {
 	  var c = 1;
@@ -44,7 +44,7 @@ function Loading({ calc }) {
 
   const result = showResult ? <Result calc={calc}/> : <div className={background}>
   			<div className=""> {renderImage()} </div>
-        <div className="bg-black p-2 font-sans text-2xl lg:text-3xl tracking-widest leading-relaxed text-white text-center m-10" style={{"font-family": "Comic Sans MS"}}> {annotation} </div>
+        <div className={cn(styles.bubble, "text-3xl lg:text-3xl tracking-widest leading-relaxed")}>{annotation}</div>
     </div>
 
   return (
@@ -53,5 +53,8 @@ function Loading({ calc }) {
   	</div>
   )
 }
+
+// <div className="bg-black p-2 font-sans text-2xl lg:text-3xl tracking-widest leading-relaxed text-white text-center m-10" style={{"font-family": "Comic Sans MS"}}> {annotation} </div>
+
 
 export default Loading
