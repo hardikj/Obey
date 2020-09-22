@@ -43,11 +43,11 @@ function Result({ calc }) {
 
   let scr = "./yungblud image.png";
   let robo = "Yungblud's robot";
-  let name = "Yungblud's"
+  let name = "Yungblud's robot"
   if (oliScore > yungblud) {
     scr = "./oli image.png";
     robo = "Oli's robot";
-    name = "Oli's"
+    name = "Oli's robot"
   }
 
   return (
@@ -57,7 +57,7 @@ function Result({ calc }) {
           <div className="flex justify-center">
        	    <img className={cn(styles.imagePosition  , "object-contain relative w-32vw lg:w-15vw")} src={scr} />
           </div>
-          <Heading> Oli's Robot </Heading>
+          <Heading> {robo} </Heading>
         </div>
         <div className="col-span-3 lg:col-span-2">
           <div className="bg-black p-8 lg:p-8vh mx-9vw lg:mx-10vw lg:my-6vh overflow-auto">
